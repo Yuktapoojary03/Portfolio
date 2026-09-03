@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yukta Pujari | Data Analyst</title>
+
+    <meta name="description"
+          content="Yukta Pujari - Aspiring Data Analyst skilled in Python, SQL, Excel, Power BI and Machine Learning.">
+
+    <meta name="keywords"
+          content="Yukta Pujari, Data Analyst, Python, SQL, Power BI, Excel, Machine Learning">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================================
+           GLOBAL
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #f8f7f3;
+            color: #1d1d1b;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =========================================
+           NAVBAR
+        ========================================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(248, 247, 243, 0.94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e5e3dc;
+            z-index: 1000;
+        }
+
+        nav {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #444;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        .nav-button {
+            border: 1px solid #1d1d1b;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: #1d1d1b;
+            color: white !important;
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-text {
+            animation: fadeUp 1s ease;
+        }
+
+        .small-title {
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(55px, 7vw, 95px);
+            line-height: 0.98;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            color: #666;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-dark {
+            background: #1d1d1b;
+            color: white;
+        }
+
+        .btn-dark:hover {
+            transform: translateY(-3px);
+            background: #333;
+        }
+
+        .btn-light {
+            border: 1px solid #1d1d1b;
+            background: transparent;
+        }
+
+        .btn-light:hover {
+            background: #1d1d1b;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================================
+           HERO IMAGE
+        ========================================= */
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            animation: fadeIn 1.2s ease;
+        }
+
+        .image-frame {
+            width: 390px;
+            height: 500px;
+            overflow: hidden;
+            background: #e9e7df;
+            position: relative;
+        }
+
+        .image-frame::after {
+            content: "";
+            position: absolute;
+            inset: 15px;
+            border: 1px solid rgba(255,255,255,0.7);
+            pointer-events: none;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .image-frame:hover img {
+            transform: scale(1.035);
+        }
+
+
+        /* =========================================
+           SECTION
+        ========================================= */
+
+        section {
+            padding: 110px 0;
+        }
+
+        .section-header {
+            margin-bottom: 55px;
+        }
+
+        .section-number {
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-family: "Playfair Display", serif;
+            font-size: 52px;
+            font-weight: 600;
+        }
+
+        .section-title span {
+            font-style: italic;
+        }
+
+
+        /* =========================================
+           ABOUT
+        ========================================= */
+
+        .about {
+            background: #ebe9e2;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.7fr 1.3fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .about-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .about-text {
+            font-size: 22px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            font-weight: 600;
+        }
+
+
+        /* =========================================
+           SKILLS
+        ========================================= */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .skill-card {
+            background: #fff;
+            border: 1px solid #dedcd5;
+            padding: 35px;
+            transition: 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+        }
+
+        .skill-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .skill-card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            border: 1px solid #d5d3cb;
+            border-radius: 20px;
+            padding: 7px 12px;
+            font-size: 12px;
+            background: #f8f7f3;
+        }
+
+
+        /* =========================================
+           PROJECTS
+        ========================================= */
+
+        .projects {
+            background: #1d1d1b;
+            color: white;
+        }
+
+        .projects .section-number {
+            color: #aaa;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            border: 1px solid #41413d;
+            padding: 35px;
+            transition: 0.3s ease;
+            background: #242422;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: #777;
+        }
+
+        .project-number {
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        .project-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #bbb;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .project-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .project-tools span {
+            border: 1px solid #555;
+            border-radius: 20px;
+            padding: 6px 11px;
+            font-size: 11px;
+            color: #ddd;
+        }
+
+        .project-link {
+            display: inline-block;
+            border-bottom: 1px solid white;
+            padding-bottom: 4px;
+            font-size: 13px;
+            transition: 0.3s ease;
+        }
+
+        .project-link:hover {
+            opacity: 0.6;
+        }
+
+
+        /* =========================================
+           CAREER OBJECTIVE
+        ========================================= */
+
+        .objective {
+            text-align: center;
+        }
+
+        .objective-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .objective-content p {
+            font-family: "Playfair Display", serif;
+            font-size: 35px;
+            line-height: 1.5;
+        }
+
+        .objective-content span {
+            font-style: italic;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        .contact {
+            background: #ebe9e2;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .contact-intro {
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            line-height: 1.3;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+        }
+
+        .contact-item small {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 10px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a {
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.6;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            background: #1d1d1b;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-content p {
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            font-size: 13px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 3px;
+        }
+
+
+        /* =========================================
+           ANIMATIONS
+        ========================================= */
+
+        @keyframes fadeUp {
+
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        @keyframes fadeIn {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+
+        /* =========================================
+           MOBILE MENU
+        ========================================= */
+
+        .menu-toggle {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                gap: 18px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .hero {
+                padding-top: 130px;
+                padding-bottom: 80px;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .image-frame {
+                width: 300px;
+                height: 380px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .container {
+                width: 88%;
+            }
+
+            nav {
+                height: 70px;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #f8f7f3;
+                flex-direction: column;
+                padding: 25px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-button {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 55px;
+            }
+
+            .hero-subtitle {
+                font-size: 20px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .section-title {
+                font-size: 42px;
+            }
+
+            .about-text {
+                font-size: 18px;
+            }
+
+            .objective-content p {
+                font-size: 26px;
+            }
+
+            .contact-intro {
+                font-size: 32px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+        }
+
+
+        /* =========================================
+           CANVA-INSPIRED EDITORIAL REFRESH
+           ========================================= */
+
+        :root {
+            --cream: #f6f3ec;
+            --paper: #fffdf8;
+            --ink: #171717;
+            --muted: #77736b;
+            --line: #dcd7cd;
+            --soft: #e9e4da;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--ink);
+        }
+
+        header {
+            background: rgba(246, 243, 236, 0.88);
+            border-bottom: 1px solid rgba(23,23,23,.10);
+        }
+
+        nav {
+            height: 74px;
+        }
+
+        .logo {
+            font-size: 20px;
+            letter-spacing: .5px;
+        }
+
+        .nav-links {
+            gap: 30px;
+        }
+
+        .nav-links a {
+            position: relative;
+            color: #4f4c47;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            width: 0;
+            height: 1px;
+            background: var(--ink);
+            transition: width .3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-button {
+            padding: 9px 18px;
+            border-radius: 3px;
+            background: var(--ink);
+            color: white !important;
+        }
+
+        .nav-button:hover {
+            background: #333;
+        }
+
+        .hero {
+            min-height: 94vh;
+            padding-top: 105px;
+            padding-bottom: 70px;
+        }
+
+        .hero-content {
+            grid-template-columns: 1.15fr .85fr;
+            gap: 80px;
+        }
+
+        .small-title {
+            display: inline-block;
+            padding: 8px 12px;
+            border: 1px solid var(--line);
+            background: rgba(255,255,255,.45);
+            letter-spacing: 2px;
+            font-size: 11px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(62px, 8vw, 108px);
+            letter-spacing: -3px;
+            margin-bottom: 18px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            letter-spacing: .3px;
+            margin-bottom: 18px;
+        }
+
+        .hero-description {
+            max-width: 560px;
+            font-size: 16px;
+            color: #66625b;
+        }
+
+        .btn {
+            border-radius: 3px;
+            padding: 13px 21px;
+        }
+
+        .btn-dark {
+            background: var(--ink);
+        }
+
+        .btn-light {
+            border-color: #aaa49a;
+            background: transparent;
+        }
+
+        .hero-image {
+            justify-content: flex-end;
+        }
+
+        .image-frame {
+            width: min(100%, 420px);
+            height: 540px;
+            background: var(--soft);
+            border-radius: 0;
+            box-shadow: 20px 20px 0 rgba(23,23,23,.07);
+        }
+
+        .image-frame::after {
+            inset: 12px;
+            border-color: rgba(255,255,255,.85);
+        }
+
+        section {
+            padding: 125px 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 52px;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 22px;
+        }
+
+        .section-number {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: clamp(42px, 5vw, 62px);
+            letter-spacing: -1.5px;
+        }
+
+        .about {
+            background: var(--paper);
+        }
+
+        .about-grid {
+            grid-template-columns: .65fr 1.35fr;
+        }
+
+        .about-label {
+            display: inline-block;
+            border-left: 3px solid var(--ink);
+            padding-left: 12px;
+        }
+
+        .about-text {
+            font-size: 20px;
+            color: #34322e;
+        }
+
+        .skill-card {
+            background: rgba(255,255,255,.62);
+            border: 1px solid var(--line);
+            border-radius: 0;
+            min-height: 270px;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 0 rgba(23,23,23,.06);
+        }
+
+        .skill-card h3,
+        .project-card h3 {
+            letter-spacing: -.5px;
+        }
+
+        .skill-tag {
+            border-radius: 3px;
+            background: transparent;
+            border-color: #c9c4ba;
+        }
+
+        .projects {
+            background: var(--ink);
+        }
+
+        .project-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .project-card {
+            min-height: 340px;
+            border: 1px solid #3b3b38;
+            border-radius: 0;
+            padding: 32px;
+            background: #20201e;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #77736b;
+        }
+
+        .project-card p {
+            max-width: 560px;
+        }
+
+        .project-link {
+            margin-top: auto;
+            width: fit-content;
+        }
+
+        .project-tools span {
+            border-radius: 3px;
+        }
+
+        .objective {
+            background: var(--cream);
+        }
+
+        .objective-content {
+            border: 1px solid var(--line);
+            padding: 55px 45px;
+            background: rgba(255,255,255,.38);
+        }
+
+        .objective-content p {
+            font-size: clamp(27px, 4vw, 42px);
+            letter-spacing: -.5px;
+        }
+
+        .contact {
+            background: var(--paper);
+        }
+
+        .contact-intro {
+            font-size: clamp(32px, 4vw, 48px);
+        }
+
+        .contact-item {
+            border-bottom-color: var(--line);
+        }
+
+        footer {
+            background: var(--ink);
+        }
+
+        .social-links a {
+            transition: opacity .3s ease;
+        }
+
+        .social-links a:hover {
+            opacity: .65;
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 900px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 55px;
+            }
+
+            .hero-image {
+                justify-content: center;
+                order: -1;
+            }
+
+            .image-frame {
+                width: 320px;
+                height: 420px;
+            }
+
+            .section-header {
+                display: block;
+            }
+
+            .section-number {
+                margin-bottom: 12px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                height: 68px;
+            }
+
+            .hero {
+                padding-top: 100px;
+            }
+
+            .hero h1 {
+                font-size: 58px;
+                letter-spacing: -2px;
+            }
+
+            .image-frame {
+                width: 285px;
+                height: 365px;
+                box-shadow: 12px 12px 0 rgba(23,23,23,.07);
+            }
+
+            .project-card {
+                min-height: 300px;
+                padding: 27px;
+            }
+
+            .objective-content {
+                padding: 35px 25px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a href="#home" class="logo">
+                YP.
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <a href="#contact" class="nav-button">
+                Let's Talk
+            </a>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     HOME / HERO
+========================================= -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+
+            <div class="hero-text">
+
+                <div class="small-title">
+                    Data Analyst • Data Science • Machine Learning
+                </div>
+
+                <h1>
+                    Yukta<br>
+                    <span>Pujari.</span>
+                </h1>
+
+                <div class="hero-subtitle">
+                    Aspiring Data Analyst
+                </div>
+
+                <p class="hero-description">
+
+                    I analyze data, build interactive dashboards, and use
+                    machine learning to transform raw information into
+                    meaningful insights and data-driven solutions.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-dark">
+                        View My Projects →
+                    </a>
+
+                    <a href="resume.pdf"
+                       class="btn btn-light"
+                       target="_blank" rel="noopener noreferrer">
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-frame">
+
+                    <!--
+                        Replace profile.png with your photo filename.
+                        Keep the image in the same folder as index.html.
+                    -->
+
+                    <img src="profile.png"
+                         alt="Yukta Pujari">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                01 — ABOUT
+            </div>
+
+            <h2 class="section-title">
+                A little <span>about me.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid" reveal">
+
+            <div>
+
+                <div class="about-label">
+                    Who I Am
+                </div>
+
+            </div>
+
+
+            <div class="about-text">
+
+                <p>
+
+                    Hello! I'm <span class="highlight">Yukta Pujari</span>,
+                    a Bachelor of Engineering graduate (2025) with a strong
+                    interest in Data Analytics, Data Science, and Machine Learning.
+
+                </p>
+
+
+                <p>
+
+                    I enjoy working with
+                    <span class="highlight">
+                        Python, SQL, Excel, Power BI, Pandas and NumPy
+                    </span>
+                    to clean, analyze and visualize data.
+
+                </p>
+
+
+                <p>
+
+                    I also have hands-on knowledge of Machine Learning
+                    algorithms including Regression, Classification,
+                    Clustering and Dimensionality Reduction.
+
+                </p>
+
+
+                <p>
+
+                    My goal is to transform raw data into
+                    <span class="highlight">
+                        actionable insights
+                    </span>
+                    and help organizations make better,
+                    data-driven decisions.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SKILLS
+========================================= -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                02 — SKILLS
+            </div>
+
+            <h2 class="section-title">
+                Tools I <span>work with.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid" reveal">
+
+
+            <!-- DATA ANALYTICS -->
+
+            <div class="skill-card">
+
+                <h3>
+                    Data Analytics
+                </h3>
+
+                <p>
+                    Turning raw data into meaningful business insights.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">DAX</span>
+                    <span class="skill-tag">Power Query</span>
+                    <span class="skill-tag">EDA</span>
+                    <span class="skill-tag">Data Cleaning</span>
+                    <span class="skill-tag">Data Visualization</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PYTHON -->
+
+            <div class="skill-card">
+
+                <h3>
+                    Python & Data Science
+                </h3>
+
+                <p>
+                    Using Python for analysis, visualization and
+                    machine learning.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">EDA</span>
+                    <span class="skill-tag">Feature Engineering</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MACHINE LEARNING -->
+
+            <div class="skill-card">
+
+                <h3>
+                    Machine Learning
+                </h3>
+
+                <p>
+                    Building and evaluating predictive models.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span class="skill-tag">Linear Regression</span>
+                    <span class="skill-tag">Logistic Regression</span>
+                    <span class="skill-tag">KNN</span>
+                    <span class="skill-tag">Naive Bayes</span>
+                    <span class="skill-tag">Decision Tree</span>
+                    <span class="skill-tag">Random Forest</span>
+                    <span class="skill-tag">Clustering</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PROJECTS
+========================================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                03 — PROJECTS
+            </div>
+
+            <h2 class="section-title">
+                Selected <span>work.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="project-grid" reveal">
+
+
+            <!-- PROJECT 01 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    01 / 08
+                </div>
+
+                <h3>
+                    Quick Commerce Analytics
+                </h3>
+
+                <p>
+
+                    End-to-end analytics project analyzing orders,
+                    customer behavior, delivery performance,
+                    revenue, categories and payment methods.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/Quick-Commerce-Analytics"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 02 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    02 / 08
+                </div>
+
+                <h3>
+                    Credit Card Fraud Detection
+                </h3>
+
+                <p>
+
+                    Machine learning project focused on detecting
+                    fraudulent credit card transactions using
+                    classification techniques.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>ML</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/Credit-Card-Fraud-Detection-"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 03 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    03 / 08
+                </div>
+
+                <h3>
+                    Employee Promotion Prediction
+                </h3>
+
+                <p>
+
+                    Classification project predicting employee
+                    promotion using Logistic Regression,
+                    Decision Tree and Random Forest.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Python</span>
+                    <span>Logistic Regression</span>
+                    <span>Decision Tree</span>
+                    <span>Random Forest</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/Employee-Promotion-Prediction"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 04 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    04 / 08
+                </div>
+
+                <h3>
+                    Customer Churn Prediction
+                </h3>
+
+                <p>
+
+                    Predicting customer churn using supervised
+                    machine learning and comparing multiple
+                    classification models.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>Classification</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/Customer-Churn-Prediction"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 05 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    05 / 08
+                </div>
+
+                <h3>
+                    Student Performance Analysis
+                </h3>
+
+                <p>
+
+                    Data analysis project exploring student performance,
+                    attendance, grades and statistical insights.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Matplotlib</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/Student-Performance-Analysis"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 06 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    06 / 08
+                </div>
+
+                <h3>
+                    HR Analytics Dashboard
+                </h3>
+
+                <p>
+
+                    Interactive Power BI dashboard analyzing employee
+                    attrition, workforce demographics, salary,
+                    satisfaction and departments.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Power Query</span>
+                    <span>Data Modeling</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/HR-Analytics-Dashoard-"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 07 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    07 / 08
+                </div>
+
+                <h3>
+                    Retail Sales Dashboard
+                </h3>
+
+                <p>
+
+                    Power BI dashboard analyzing sales,
+                    revenue, profit, orders, customers and
+                    regional performance.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Power Query</span>
+                    <span>Excel</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/Retail-Sales-Dashboard"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 08 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    08 / 08
+                </div>
+
+                <h3>
+                    Madhav E-Commerce Dashboard
+                </h3>
+
+                <p>
+
+                    Business intelligence dashboard analyzing
+                    e-commerce sales, profit, quantity, categories,
+                    customers and payment methods.
+
+                </p>
+
+                <div class="project-tools">
+
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Power Query</span>
+                    <span>Excel</span>
+
+                </div>
+
+                <a href="https://github.com/Yuktapoojary03/Madhav-Ecommerce-Sales-Dashboard-"
+                   target="_blank"
+                   class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CAREER OBJECTIVE
+========================================= -->
+
+<section class="objective">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                04 — OBJECTIVE
+            </div>
+
+        </div>
+
+
+        <div class="objective-content" reveal">
+
+            <p>
+
+                "To build a successful career in
+                <span>Data Analytics and Data Science</span>,
+                using data-driven insights and machine learning
+                to solve real-world problems."
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                05 — CONTACT
+            </div>
+
+            <h2 class="section-title">
+                Let's work <span>together.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid" reveal">
+
+
+            <div>
+
+                <div class="contact-intro">
+
+                    Looking for an
+                    opportunity to
+                    learn, contribute
+                    and grow.
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-info">
+
+
+                <div class="contact-item">
+
+                    <small>
+                        Email
+                    </small>
+
+                    <a href="mailto:yuktapoojary57@gmail.com">
+                        yuktapoojary57@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>
+                        LinkedIn
+                    </small>
+
+                    <a href="https://www.linkedin.com/in/yukta-pujari-b6985a259?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                       target="_blank" rel="noopener noreferrer">
+
+                        LinkedIn Profile →
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>
+                        GitHub
+                    </small>
+
+                    <a href="https://github.com/Yuktapoojary03"
+                       target="_blank" rel="noopener noreferrer">
+
+                        github.com/Yuktapoojary03 →
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>
+                        Location
+                    </small>
+
+                    <span>
+                        Mumbai, Maharashtra, India
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <p>
+                © 2026 Yukta Pujari. All Rights Reserved.
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://github.com/Yuktapoojary03"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/yukta-pujari-b6985a259?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        const navLinks = document.getElementById("navLinks");
+
+        navLinks.classList.toggle("active");
+
+    }
+
+
+    // Close mobile menu after clicking a link
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document
+                .getElementById("navLinks")
+                .classList.remove("active");
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+     
